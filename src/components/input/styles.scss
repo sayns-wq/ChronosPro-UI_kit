@@ -1,0 +1,24 @@
+.input_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.input_label {
+  cursor: pointer;
+}
+.input_style {
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  &:hover {
+    border: 1px solid #787878;
+    transition: all 0.4s;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+  &:focus {
+    border: 1px solid #787878;
+  }
+}
