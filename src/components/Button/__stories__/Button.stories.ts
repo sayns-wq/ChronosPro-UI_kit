@@ -2,33 +2,34 @@ import type { Meta, StoryObj } from "@storybook/react-webpack5";
 
 import { fn } from "storybook/test";
 
-import Input from "../Input";
+import Button from "../Button";
 
 const meta = {
-  title: "Example/Input",
-  component: Input,
+  title: "Example/Button",
+  component: Button,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
   argTypes: {
     backgroundColor: { control: "color" },
+    isLoading: { control: "boolean" },
+    size: { control: "select", options: ["xs", "s", "m", "l", "xl"] },
   },
   args: { onClick: fn() },
-} satisfies Meta<typeof Input>;
+} satisfies Meta<typeof Button>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
   args: {
-    label: "Input",
-    placeholder: "placeholder",
+    text: "Button",
   },
 };
-
-export const Secondary: Story = {
+export const Loading: Story = {
   args: {
-    label: "Button",
+    text: "Button",
+    isLoading: true,
   },
 };

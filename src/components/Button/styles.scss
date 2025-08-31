@@ -1,0 +1,29 @@
+.ui-kit-button {
+  background-color: #134af4;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  color: #ffffff;
+  &[data-size="xs"] {
+    padding: 6px 8px;
+  }
+  &[data-size="s"] {
+    padding: 8px 16px;
+  }
+  &[data-size="m"] {
+    padding: 10px 20px;
+  }
+  &[data-size="l"] {
+    padding: 10px 24px;
+  }
+  &[data-size="xl"] {
+    padding: 10px 36px;
+  }
+  &:hover {
+    background-color: #9e3bf8;
+    transition: all 0.4s;
+  }
+  &:active {
+    background-color: #9e3bf8;
+  }
+}

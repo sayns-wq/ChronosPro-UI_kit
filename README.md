@@ -1,12 +1,13 @@
 # Component list
 
-Input
-Button
-Checkbox
+Input done
+Button done
+Checkbox done
 List
-Loader
+Loader done
 Modal
 Radio
+RadioGroup
 Select
 Pagination
 Process
