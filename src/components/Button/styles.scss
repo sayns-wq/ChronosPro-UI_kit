@@ -1,9 +1,10 @@
+@import "../../base/scss/_variables";
 .ui-kit-button {
-  background-color: #134af4;
+  background-color: $primary;
   border: none;
   border-radius: 5px;
   outline: none;
-  color: #ffffff;
+  color: $white;
   &[data-size="xs"] {
     padding: 6px 8px;
   }
@@ -20,10 +21,10 @@
     padding: 10px 36px;
   }
   &:hover {
-    background-color: #9e3bf8;
+    background-color: $accent-hover;
     transition: all 0.4s;
   }
   &:active {
-    background-color: #9e3bf8;
+    background-color: $secondary;
   }
 }

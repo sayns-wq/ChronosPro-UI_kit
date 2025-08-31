@@ -1,3 +1,4 @@
+@import "../../base/scss/_variables";
 .checkbox-wrapper {
   display: inline-flex;
   align-items: center;
@@ -24,8 +25,8 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  font-size: 14px;
-  color: #333;
+  font-size: $font-size-sm;
+  color: $text-color;
 }
 
 .checkbox-box {
@@ -34,20 +35,20 @@
   align-items: center;
   width: 18px;
   height: 18px;
-  border: 2px solid #999;
+  border: 2px solid $gray;
   border-radius: 4px;
   margin-right: 8px;
   transition: all 0.2s ease;
-  background-color: white;
+  background-color: $white;
 
   &.checked {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: $primary;
+    border-color: $primary;
   }
 
   &.disabled {
-    border-color: #ccc;
-    background-color: #f9f9f9;
+    border-color: $gray;
+    background-color: $gray-lighter;
   }
 }
 

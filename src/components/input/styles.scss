@@ -1,3 +1,5 @@
+@import "../../base/scss/_variables";
+
 .input_wrapper {
   display: flex;
   flex-direction: column;
@@ -7,16 +9,16 @@
   outline: none;
   padding: 10px 15px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid $gray;
   width: 100%;
   &:hover {
-    border: 1px solid #787878;
+    border: 1px solid $primary;
     transition: all 0.4s;
   }
   &:disabled {
     cursor: not-allowed;
   }
   &:focus {
-    border: 1px solid #134af4;
+    border: 1px solid $primary;
   }
 }

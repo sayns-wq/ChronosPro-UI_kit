@@ -6,7 +6,7 @@ Checkbox done
 List
 Loader done
 Modal
-Radio
+Radio done
 RadioGroup
 Select
 Pagination
