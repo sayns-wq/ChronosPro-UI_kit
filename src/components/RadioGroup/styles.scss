@@ -1,0 +1,32 @@
+@import "../../base/scss/_variables";
+
+.ui-kit-radioGroup {
+  border: 1px solid $gray-lighter;
+  font-family: $font-family-main;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background-color: $white;
+
+  &-legend {
+    font-weight: 600;
+    color: $text-color;
+    margin-bottom: 8px;
+  }
+
+  &-options {
+    display: flex;
+    gap: 8px;
+    &-horisontal {
+      flex-direction: row;
+    }
+    &-vertical {
+      flex-direction: column;
+    }
+  }
+}
+
+// Отключённый стиль для всей группы
+fieldset[disabled] {
+  opacity: 0.6;
+  pointer-events: none;
+}
