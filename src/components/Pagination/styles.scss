@@ -1,0 +1,72 @@
+@import "../../base/scss/_variables";
+
+.ui-kit-pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  font-family: $font-family-main;
+}
+
+.ui-kit-paginationList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ui-kit-paginationItem {
+  display: flex;
+}
+
+.ui-kit-paginationButton {
+  width: 36px;
+  height: 36px;
+  border: 1px solid $gray-lighter;
+  background-color: $gray-lighter;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+
+  &:hover:not(.ui-kit-disabled):not(.ui-kit-active) {
+    background-color: $gray-light;
+    border-color: $gray;
+  }
+
+  &:focus {
+    outline: 2px solid $primary;
+    z-index: 1;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+.ui-kit-paginationNav {
+  font-weight: bold;
+}
+
+.ui-kit-active {
+  background-color: $primary;
+  color: $white;
+  border-color: $primary;
+  font-weight: 600;
+}
+
+.ui-kit-paginationEllipsis {
+  color: $gray;
+  padding: 0 8px;
+  user-select: none;
+}
+
+.ui-kit-disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
